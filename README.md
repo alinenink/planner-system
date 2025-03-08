@@ -1,68 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📅 Post Planner System
 
-## Available Scripts
+O **Post Planner System** é uma aplicação web desenvolvida em **React** e **Redux**, projetada para ajudar criadores de conteúdo a organizarem e gerenciarem postagens em diversas plataformas sociais. Com um planejamento semanal intuitivo, os usuários podem adicionar, editar e visualizar seus posts programados de maneira eficiente.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 **Funcionalidades Principais**
+- 📆 **Planejamento Semanal**: Interface de calendário semanal para visualizar e gerenciar posts planejados.
+- 📝 **Criação de Postagens**: Adicione postagens para múltiplas plataformas sociais.
+- 🎯 **Feed Planejado**: Lista de posts planejados para o dia selecionado.
+- 🖊️ **Edição e Remoção**: Edite ou exclua posts diretamente pelo feed planejado.
+- ⚠️ **Marcar como Abandonado**: Indique postagens que não serão mais realizadas.
+- 📊 **Insights e Métricas**: Visualize estatísticas de postagens planejadas, concluídas e abandonadas.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 🛠 **Tecnologias Utilizadas**
+- **React**: Biblioteca para construção da interface de usuário.
+- **Redux Toolkit**: Gerenciamento de estado global da aplicação.
+- **Tailwind CSS**: Estilização moderna e responsiva.
+- **React DnD**: Implementação de Drag & Drop para organização de posts no feed planejado.
+- **React Icons**: Ícones personalizáveis para a interface.
+- **React Modal**: Modais interativos para criação e edição de postagens.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗 **Instalação e Configuração**
 
-### `npm run build`
+### 🔧 **Pré-requisitos**
+Antes de começar, certifique-se de ter instalado:
+- **Node.js** (versão 16+)
+- **npm** ou **yarn**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📥 **Clonar o Repositório**
+```bash
+git clone https://github.com/seu-usuario/post-planner-system.git
+cd post-planner-system
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+📦 Instalar Dependências
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+▶ Rodar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A aplicação estará disponível em http://localhost:3000/.
+📂 Estrutura do Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+📂 post-planner-system
+├── 📂 public
+│   ├── index.html
+│   └── favicon.ico
+│
+├── 📂 src
+│   ├── 📂 components
+│   │   ├── CreatePostModal.jsx
+│   │   ├── EditPostModal.jsx
+│   │   ├── FeedPreviewComponent.jsx
+│   │   ├── WeeklyCalendarComponent.jsx
+│   │   ├── GeneralInsightsComponent.jsx
+│   │   ├── DailyDetailsModal.jsx
+│   │   └── ...
+│   │
+│   ├── 📂 store
+│   │   ├── plansSlice.js
+│   │   ├── profileSlice.js
+│   │   ├── store.js
+│   │   └── ...
+│   │
+│   ├── 📂 pages
+│   │   ├── NewPostComponent.jsx
+│   │   ├── WeeklyView.jsx
+│   │   └── ...
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🖥 Como Usar
 
-## Learn More
+    Criar um Post
+        Acesse a tela "Incluir Novo Planejamento".
+        Preencha o título, data, descrição e selecione a(s) plataforma(s).
+        Clique em "Salvar" para adicionar a postagem ao planejamento.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Visualizar Posts Planejados
+        No calendário semanal, os dias com posts planejados exibirão um contador de publicações.
+        Clique no dia desejado para visualizar o feed de posts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Editar, Excluir ou Abandonar um Post
+        Utilize os botões de ação no Feed Planejado para modificar os posts.
 
-### Code Splitting
+    Acompanhar Insights
+        Acesse a seção de Insights Gerais para visualizar estatísticas sobre os posts.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+📌 Contribuições
 
-### Analyzing the Bundle Size
+👩‍💻 Autor
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Este projeto foi desenvolvido por Aline Nink, desenvolvedora front-end com foco em criar aplicações modernas e responsivas. Sempre buscando aprender e melhorar, este portfólio reflete meu trabalho e paixão pela tecnologia.
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+🌐 Acesse
+Você pode conferir meu portfólio em: https://alinenink.github.io/alinenink
