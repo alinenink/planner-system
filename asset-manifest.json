@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/planner-system/static/css/main.f7b49614.css",
+    "main.js": "/planner-system/static/js/main.a3e28eb8.js",
+    "static/media/profile.JPG": "/planner-system/static/media/profile.ddd2e3afafaa5f42832a.JPG",
+    "index.html": "/planner-system/index.html",
+    "main.f7b49614.css.map": "/planner-system/static/css/main.f7b49614.css.map",
+    "main.a3e28eb8.js.map": "/planner-system/static/js/main.a3e28eb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7b49614.css",
+    "static/js/main.a3e28eb8.js"
+  ]
+}
